@@ -1,28 +1,10 @@
-gensim==3.8.3
-numpy==1.18.5
-wordcloud==1.8.0
-textblob==0.15.3
-nltk==3.5
-streamlit==0.69.2
-rake_nltk==1.0.4
-spacy==2.3.2
-spacy_streamlit==0.1.0
-seaborn==0.11.0
-joblib==0.17.0
-sumy==0.8.1
-pandas==1.1.3
-matplotlib==3.3.2
-Pillow==8.2.0
-scikit_learn==0.24.1
-pytorch-lightning==0.9.0
-torch==1.10.0
-torchtext==0.8.0
-torchvision==0.11.1   
-datasets==2.3.2
-numpy==1.20.3
-transformers==4.12.5
-
-pip install freetype-py
-
-pip uninstall pillow
-pip install --no-cache-dir pillow
+rake-nltk==1.0.6
+spacy-streamlit==1.0.6
+sumy==0.11.0
+pytorch-lightning==2.0.6
+torch==2.0.1
+torchtext==0.15.2
+torchvision==0.15.2  
+datasets==2.14.3
+transformers==4.31.0
+freetype-py==2.4.0

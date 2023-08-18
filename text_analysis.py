@@ -25,6 +25,8 @@ from PIL import Image
 from itertools import chain
 import streamlit as st
 # Download required NLTK resources
+nltk.download('wordnet')
+nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 from gensim.utils import tokenize
@@ -182,7 +184,7 @@ def regex_chunking(tokens):
     t= nltk.RegexpParser(regex)
     r = t.parse(sent)
     return r
-# Simple Regex based NP chunker
+# Simple Regex based NP chinker
 from gensim.utils import tokenize
 from gensim.parsing.preprocessing import remove_stopwords, strip_punctuation
 
@@ -230,11 +232,11 @@ def tokenize_with_nltk(text):
     return tokens
 
 
-def regex_chunker(tokens):
+def regex_chinker(tokens):
     sent = nltk.pos_tag(tokens)
     regex = """NP:{<.*>+}               
                     }<VBD | IN>+{"""
-    # it will chunk everything first and then chunk VBD and IN
+    # it will chunk everything first and then chink VBD and IN
     t = nltk.RegexpParser(regex)
     r = t.parse(sent)
     return r
